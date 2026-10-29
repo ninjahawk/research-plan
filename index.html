@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technical AI Safety — Research Action Plan · Nathan Langley</title>
+<meta name="description" content="Nathan Langley's research action plan: does evaluation awareness in language models correspond to identifiable internal representations, and do they causally affect behavior?">
+<meta property="og:title" content="Technical AI Safety — Research Action Plan">
+<meta property="og:description" content="Does evaluation awareness correspond to identifiable internal representations, and do they causally affect model behavior?">
+<meta property="og:url" content="https://research.nathanlangley.dev/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1f2937; --body:#262626; --head:#2f4a7a; --muted:#6b7280; --rule:#e5e7eb; --bg:#fff; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--bg); color:var(--body); font:17px/1.7 "Open Sans", Helvetica, Arial, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:72px 28px 56px; }
+  h1 { color:var(--ink); font-size:2rem; line-height:1.25; text-align:center; margin:0 0 8px; font-weight:700; }
+  .byline { text-align:center; color:var(--muted); font-size:.95rem; margin:0 0 48px; }
+  .byline a { color:var(--muted); }
+  h2 { color:var(--head); font-size:1.2rem; font-weight:700; margin:40px 0 10px; }
+  p { margin:0 0 12px; }
+  ol { margin:0; padding-left:1.4em; }
+  li { margin:0 0 6px; padding-left:.2em; }
+  footer { border-top:1px solid var(--rule); margin-top:56px; padding-top:20px; color:var(--muted); font-size:.9rem; text-align:center; }
+  footer a { color:var(--head); text-decoration:none; }
+  footer a:hover { text-decoration:underline; }
+  @media (max-width:560px) { main { padding:44px 20px 40px; } h1 { font-size:1.6rem; } body { font-size:16px; } }
+  @media print { main { padding:0; } footer { display:none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Technical AI Safety — Research Action Plan</h1>
+  <p class="byline"><a href="https://nathanlangley.dev">Nathan Langley</a></p>
+
+  <h2>Research objective</h2>
+  <p>I want to pursue empirical technical AI safety research, with a particular interest in mechanistic interpretability and understanding how models recognize evaluation contexts. My current question is whether evaluation awareness corresponds to identifiable internal representations and whether those representations causally affect model behavior.</p>
+
+  <h2>Initial research approach</h2>
+  <p>I plan to narrow this into a testable question using an open-weight model. I would start by constructing matched evaluation-like and ordinary task contexts, then examine whether activation probes can reliably distinguish them while controlling for superficial prompt differences. If a candidate signal emerges, I would test causal relevance through targeted activation interventions and measure whether behavior changes. I also want to investigate the possibility that evaluation awareness is distributed rather than localized, and to avoid interpreting a successful probe alone as evidence of a coherent mechanism.</p>
+
+  <h2>Near-term steps</h2>
+  <ol>
+    <li>Review related work on situational awareness, evaluation awareness, activation probing, and causal interventions.</li>
+    <li>Define a small, reproducible experiment and explicit success and failure criteria.</li>
+    <li>Run a pilot with an accessible open-weight model and document results, including negative findings.</li>
+    <li>Use feedback to refine the question and decide whether a larger research project is warranted.</li>
+  </ol>
+
+  <h2>What I hope to discuss</h2>
+  <p>I'd value feedback on whether this is a useful and tractable research direction, how best to scope the first experiment, and what technical gaps I should prioritize. I'm interested in continuing technical AI safety research beyond the course and would appreciate guidance on potential mentorship, compute resources, and opportunities to contribute to a research project.</p>
+
+  <h2>Longer-term direction</h2>
+  <p>My goal is to build the skills and research track record needed to contribute meaningfully to empirical AI safety, particularly work that helps us understand and evaluate model behavior.</p>
+
+  <footer><a href="https://nathanlangley.dev">nathanlangley.dev</a> · <a href="https://github.com/ninjahawk">GitHub</a></footer>
+</main>
+</body>
+</html>
